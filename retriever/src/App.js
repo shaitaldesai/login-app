@@ -16,25 +16,25 @@ class App extends React.Component {
     }
   }
 
-componentDidMount() {
-    console.log('inside componentDidMount');
-    var self = this;
-    $.ajax({
-      url: '/devices',
-      method: 'GET',
-      // data: {userName: 'testUser', password: 'abc123ABC$$$'},
-      success: (data) => {
-        console.log('DATA', data);
-        self.setState({
-          deviceList: data
-        });
-        console.log('SELF', self.state.data);
-      },
-      error: (err) => {
-        console.log(err);
-      }
-    })
-  }
+// componentDidMount() {
+//     console.log('inside componentDidMount');
+//     var self = this;
+//     $.ajax({
+//       url: '/devices',
+//       method: 'GET',
+//       // data: {userName: 'testUser', password: 'abc123ABC$$$'},
+//       success: (data) => {
+//         console.log('DATA', data);
+//         self.setState({
+//           deviceList: data
+//         });
+//         console.log('SELF', self.state.data);
+//       },
+//       error: (err) => {
+//         console.log(err);
+//       }
+//     })
+//   }
 
   render () {
     return (
