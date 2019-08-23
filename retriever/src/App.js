@@ -1,4 +1,6 @@
 import React from 'react';
+import $ from 'jquery';
+import DeviceList from './deviceList.js';
 import './App.css';
 
 class App extends React.Component {
@@ -20,6 +22,7 @@ class App extends React.Component {
       <header className="App-header">
        <h2> DeviceList </h2>
         <div>
+          <DeviceList list={this.state.deviceList} />
         </div>
       </header>
     </div>
